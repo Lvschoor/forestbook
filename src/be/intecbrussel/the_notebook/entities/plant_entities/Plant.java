@@ -1,5 +1,6 @@
 package be.intecbrussel.the_notebook.entities.plant_entities;
 
+// Flower class built according given UML
 public class Plant {
 
     private String name;

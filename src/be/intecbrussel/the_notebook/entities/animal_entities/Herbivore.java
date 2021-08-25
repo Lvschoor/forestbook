@@ -27,20 +27,24 @@ public class Herbivore extends Animal{
         return dietSet;
     }
 
+// define the plantDiet based on a Set of plants
     public void setPlantDiet(Set<Plant> plantDiet) {
         this.plantDiet = plantDiet;
     }
 
+// add a plant to the existing Set of plants of the plantDiet
     public void addPlantToDiet(Plant plant){
         plantDiet.add(plant);
 
     }
 
+// print the list of plants that forms the plantDiet to the console
     public void printDiet(){
         plantDiet.forEach(plant -> System.out.println(plant.getName()));
 
     }
 
+// customized toString
     @Override
     public String toString() {
         return "Animal: "+ getName() +" (height: "+getHeight()
