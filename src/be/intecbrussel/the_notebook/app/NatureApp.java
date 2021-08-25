@@ -138,12 +138,12 @@ public class NatureApp {
 
 // Printing the diet of a herbivore to the console
         System.out.println();
-        System.out.println("The plant diet of " + observedAnimal8);
+        System.out.println("The plants that are  a part of the diet of " + observedAnimal8);
         observedAnimal8.printDiet();
 
 // Adding a plant to the diet of a herbivore and printing the new diet to the console
         observedAnimal8.addPlantToDiet(observedPlant2);
-        System.out.println("The new plant diet of " + observedAnimal8 + " after adding a new plant:");
+        System.out.println("The new plant-diet of " + observedAnimal8 + " after adding an extra plant:");
         observedAnimal8.printDiet();
     }
 }
