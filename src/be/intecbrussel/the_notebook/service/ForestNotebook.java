@@ -3,6 +3,7 @@ package be.intecbrussel.the_notebook.service;
 import be.intecbrussel.the_notebook.entities.animal_entities.*;
 import be.intecbrussel.the_notebook.entities.plant_entities.*;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -101,18 +102,18 @@ public class ForestNotebook {
     }
 
     public void sortAnimalsByName() {
-        animals.sort(new AnimalNameSorter());
+        animals.sort(Comparator.comparing(Animal::getName));
     }
 
     public void sortPlantsByName() {
-        plants.sort(new PlantNameSorter());
+        plants.sort(Comparator.comparing(Plant::getName));
     }
 
     public void sortAnimalsByHeight() {
-        animals.sort(new AnimalHeightSorter());
+        animals.sort(Comparator.comparing(Animal::getHeight));
     }
 
     public void sortPlantsByHeight() {
-        plants.sort(new PlantHeightSorter());
+        plants.sort(Comparator.comparing(Plant::getHeight));
     }
 }
